@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaga de Professor</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario para vaga de professores</h1>
+        <p>Preencha todos os campos corretamente</p>
+    </header>
+
+    <section>
+        <form action="">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required> <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required> <br>
+
+        <label for="idade">Data de Nasc.:</label>
+        <input type="date" name="idade" id="idade" required> <br>
+
+        <label for="materia">Qual materia deseja lecionar:</label>
+        <select name="materia" id="materia" required>
+            <option value="">Selecione</option>
+            <option value="matematica">Matemática</option>
+            <option value="portugues">Português</option>
+            <option value="biologia">Biologia</option>
+            <option value="ciencias">Ciências</option>
+            <option value="historia">História</option>
+            <option value="geografia">Geografia</option>
+            <option value="artes">Artes</option>
+        </select> <br>
+
+        <label for="escolaridade">Nivel de escolaridade</label>
+        <select name="escolaridade" id="escolaridade" required>
+            <option value="">Selecione</option>
+            <option value="superiorcomp">Ensino superior completo</option>
+            <option value="cursandomestrado">Cursando mestrado</option>
+            <option value="mestradocomp">Mestrado completo</option>
+            <option value="cursandodoutorado">Cursando doutorado</option>
+            <option value="doutoradocomp">Doutorado completo</option>
+        </select> <br>
+
+        <label for="turno">Turno</label>
+        <select name="Turno" id="turno" required>
+            <option value="">Selecione</option>
+            <option value="matutino">Matutino</option>
+            <option value="vespertino">Vespertino</option>
+            <option value="noturno">Noturno</option>
+        </select> <br>
+
+        <label for="autodescricao">Breve descrição sobre si mesmo:</label> <br>
+        <textarea name="autodescricao" id="autodescricao" cols="26" rows="10" maxlength="200" required></textarea> <br>
+
+        <input type="submit" value="Enviar Formulário">
+        </form>
+    </section>
+</body>
+</html>
